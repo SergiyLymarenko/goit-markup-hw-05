@@ -503,8 +503,8 @@
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
-          <svg width="24" height="24" class="modal-btn-icon">
-            <use href="./images/icon-features.svg#icon-close" />
+          <svg width="8" height="8" class="modal-btn-icon">
+            <use href="./images/icon-features.svg#icon-cross" />
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
@@ -542,11 +542,33 @@
             </div>
           </div>
 
-          <div class="modal-form-box">
-            <label for=""> Comment</label>
-            <div class="">
-              <textarea type="text" rows="5">Text input</textarea>
+          <div class="modal-comment-box">
+            <label class="modal-form-label" for="user-comment"> Comment</label>
+            <div class="modal-textarea">
+              <textarea
+                class="modal-comment"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
             </div>
+          </div>
+
+          <div class="modal-checkbox">
+            <label class="modal-checkbox-form" for=""></label>
+            <input
+              class="modal-checkbox-input"
+              type="checkbox"
+              name="user-privecy"
+              value="true"
+            />
+            <p class="checkbox-text">
+              I accept the terms and conditions of the
+              <span class="privacy-police">Privacy Policy</span>
+            </p>
+          </div>
+
+          <div>
+            <button class="send-btn" type="submit">Send</button>
           </div>
         </form>
       </div>
